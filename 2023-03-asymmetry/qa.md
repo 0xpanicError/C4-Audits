@@ -9,6 +9,8 @@ Variables that represent value of ERC20 tokens should always have 18 decimal pla
 `underlyingValue` and `derivativeReceivedEthValue` by `10**18` as they are remultiplied in later lines anyways. Doing this
 causes rounding errors which can lead to unwanted concequences.
 
+Contracts in scope: https://github.com/code-423n4/2023-03-asymmetry/blob/main/contracts/SafEth/SafEth.sol
+
 *Instances (2)*:
 ```solidity
 File: contracts/SafEth/SafEth.sol
